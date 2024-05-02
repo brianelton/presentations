@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="dist/theme/black.css">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/github-dark.css">
 	</head>
 	<body>
 		<div class="reveal">
@@ -23,15 +23,93 @@
 				<section>
 					<h1>Agenda</h1>
 					<ul>
-						<li>Disability in the physical world</li>
-						<li>Disability in the digital world</li>
-						<li>Assistive Technology
+						<li class="fragment">Disability
+							<ul>
+								<li>What is disability?</li>
+								<li>Types of disabilities</li>
+								<li>Disability in the digital world</li>
+							</ul>
+						</li>
+						<li class="fragment">Assistive Technology
 							<ul>
 								<li>Demonstrations</li>
 							</ul>
 						</li>
-						<li>Designing and coding for accessibility</li>
+						<li class="fragment">Designing and coding for accessibility</li>
 					</ul>
+				</section>
+				<section>
+					<h1>Disability</h1>
+				</section>
+				<section>
+					<section>
+						<h2>What is disability?</h2>
+						<p class="fragment">Disability is part of being human.</p>
+						<p class="fragment">Disability results from the interaction between individuals with a health condition, such as cerebral palsy, Down syndrome and depression, with personal and environmental factors including negative attitudes, inaccessible transportation and public buildings, and limited social support.</p>
+						<p class="fragment"><small>World Health Organization</small></p>
+					</section>
+					<section>
+						<h2>Disability facts</h2>
+						<p class="fragment">Almost everyone will temporarily or permanently experience disability at some point in their life.</p>
+						<p class="fragment">An estimated 1.3 billion people – about 16% of the global population – currently experience significant disability.</p>
+						<p class="fragment"><small>World Health Organization</small></p>
+					</section>
+				</section>
+				<section>
+					<h1>Types of disabilities</h1>
+				</section>
+				<section>
+					<section>
+						<h2>Vision disabilities</h2>
+					</section>
+					<section>
+						<h3>Blindness</h3>
+					</section>
+					<section>
+						<h3>Low vision</h3>
+					</section>
+					<section>
+						<h3>Colour blindness</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Hearing disabilities</h2>
+					</section>
+					<section>
+						<h3>Deaf</h3>
+					</section>
+					<section>
+						<h3>Hard of hearing</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Physical disabilities</h2>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Cognitive disabilities</h2>
+					</section>
+				</section>
+				<section>
+					<h2>HTML Headings</h2>
+					<pre><code class="language-html" data-trim>
+						<h1>Page heading</h1>
+
+								<h2>Topic heading</h2>
+
+										<h3>Subtopic heading</h3>
+
+								<h2>Topic heading</h2>
+								
+										<h3>Subtopic heading</h3>
+
+												<h4>Sub-subtopic heading</h4>
+
+								<h2>Topic heading</h2>
+					</code></pre>
 				</section>
 			</div>
 		</div>
@@ -45,8 +123,13 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
 				hash: true,
-
+				slideNumber: true,
+				showSlideNumber: 'all',
+				navigationMode: 'linear',
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
